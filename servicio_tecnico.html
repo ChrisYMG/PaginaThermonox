@@ -4,9 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=s, initial-scale=1.0">
-        <!-- <script src="https://www.google.com/recaptcha/api.js"></script>
-        <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script> -->
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
         <link rel="icon" type="image/jpg" sizes="32x32" href="./img/favicon-32x32.png">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="contacto_colaboradores.css">
@@ -26,21 +24,6 @@
 
     </head>
     <body>
-        <!-- <script>
-            function onSubmit(token) {
-              document.getElementById("form").submit();
-            }
-          </script>
-        <script>
-            function onClick(e) {
-              e.preventDefault();
-              grecaptcha.ready(function() {
-                grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
-                    // Add your logic to submit to your backend server here.
-                });
-              });
-            }
-        </script> -->
         <div class="encabezado">
             <div class="tel-con-idi centrado">
                 <div class="info_encabezado" id="telefono">
@@ -143,8 +126,8 @@
                 </tr>
                 <tr>
                     <td>
-                        <form name="informacion_contacto" netlify id="form">
-                            <!-- onChange="dirChange()" action="mailto:jolopgem@gmail.com" id="form"  enctype="text/plain"   method="post"-->
+                        <form action="https://formsubmit.co/cmejiagalindo@yahoo.com" method="POST">
+                        <!-- <form name="informacion_contacto" id="form" onChange="dirChange()" action="mailto:jolopgem@gmail.com" id="form"  enctype="text/plain"   method="post"> -->
                             <table border="0" width="45%"  align="left" cellspacing="20" cellpading="10">
                                 <tr align="center">
                                     <td colspan="2"><p id="titulo18">¿Necesita mayores informes o cotización?</p> </td>
@@ -206,12 +189,7 @@
                                 <tr>
                                     <td></td>
                                     <td><p class="left-content">
-                                        <!-- <button class="boton g-recaptcha" 
-                                        data-sitekey="6Ld4aFIfAAAAANbcTe-KJTyNiHP7hlcnc4O7V3x0" 
-                                        data-callback='onSubmit' 
-                                        data-action='submit'>Enviar
-                                    </button> -->
-                                    <div class="g-recaptcha" data-sitekey="6LdAgVIfAAAAAHPkgl5obQoOcy4NJvxtgkE1Vvsn"></div>
+                                    <!-- <div class="g-recaptcha" data-sitekey="6LdAgVIfAAAAAHPkgl5obQoOcy4NJvxtgkE1Vvsn"></div> -->
                                     <input type="submit" class="boton" id="envia datos" value="Enviar">
                                             <input type="reset" value="Reset" class="boton">
                                     </td>
