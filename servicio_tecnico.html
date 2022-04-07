@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=s, initial-scale=1.0">
+        <script src="https://www.google.com/recaptcha/api.js"></script>
         <link rel="icon" type="image/jpg" sizes="32x32" href="./img/favicon-32x32.png">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="contacto_colaboradores.css">
@@ -188,7 +189,12 @@
                                 <tr>
                                     <td></td>
                                     <td><p class="left-content">
-                                            <input type="submit" class="boton" id="envia datos" value="Enviar">
+                                        <button class="g-recaptcha" 
+                                        data-sitekey="reCAPTCHA_site_key" 
+                                        data-callback='onSubmit' 
+                                        data-action='submit'>Enviar
+                                    </button>
+                                    <!-- <input type="submit" class="boton" id="envia datos" value="Enviar"> -->
                                             <input type="reset" value="Reset" class="boton">
                                     </td>
                                     </p> 
@@ -244,6 +250,10 @@
                 </div> 
             </div>
         </footer>
-
+        <script>
+            function onSubmit(token) {
+              document.getElementById("form").submit();
+            }
+          </script>
     </body> 
 </html> 
