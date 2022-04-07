@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=s, initial-scale=1.0">
+        <link rel="icon" type="image/jpg" sizes="32x32" href="./img/favicon-32x32.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="contacto_colaboradores.css">
+        <title>Soporte técnico - ThermoNox®</title>
+        <script>
+            function dirChange() {
+                var copia = document.getElementById("copia").checked;
+                var cc = document.all.email.value;
+                console.log(copia);
+                if (copia) {
+                    document.all.form.action = "mailto:jolopgem@gmail.com?cc="+cc;
+                } else {
+                    document.all.form.action = "mailto:jolopgem@gmail.com";
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <div class="encabezado">
+            <div class="tel-con-idi centrado">
+                <div class="info_encabezado" id="telefono">
+                    <p>000 000 0000</p>
+                </div>
+                <div class="info_encabezado" id="contacto">
+                    <p>correo@email.com</p>
+                </div>
+                <div class="info_encabezado" id="idioma">
+                    <div class="dropdown">
+                        <button class="dropbtn">Español</button>
+                        <div class="dropdown-content">
+                            <a href="./index.html">Español</a>
+                            <a href="./index_en.html">English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#openMenu" class="icon_menu">
+                <img src="./img/icon_menu.png" alt="">
+            </a>
+            <div class="imagen_encabezado centrado">
+                <a title="ThermoNox®" href="index.html"><img src="./img/thermonox-neu-logo-xl.png" alt="ThermoNox®" id="logo_inicial" class="responsive"></a>
+            </div>
+            <div class="centrado">
+                <div class="menu_pantalla">
+                    <ul class="nav">
+                        <li><a href="./index.html">INICIO</a></li>
+                        <li><a href="">THERMONOX®</a>
+                            <ul class="submenu">
+                                <li><a href="./funcionamiento.html">Funcionamiento</a></li>
+                                <li><a href="./aplicaciones.html">Aplicaciones</a></li>
+                                <li><a href="./seguridad.html">Seguridad</a></li>
+                                <li><a href="./thermonoxilo.html">ThermoNoxilo® - Tratamiento de silos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="./servicio_tecnico.html">CONTACTO Y COLABORADORES</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="openMenu" class="cont_menu">
+            <div>
+                <a href="#close" title="Close" class="close">
+                    <img src="./img/icon_close.png" alt="">
+                </a>
+                <div class="menu_mobile">
+                    <a href="./index.html">INICIO</a>
+                    <a href="#the_menu">THERMONOX®</a>
+                    <a href="./thermonoxilo.html">THERMONOXILO®</a>
+                    <select>
+                        <option>Español</option>
+                        <option>English</option>
+                    </select>
+                    <a href="./servicio_tecnico.html">CONTACTO Y COLABORACIONES</a>
+                </div>
+            </div> 
+        </div>
+        <div id="the_menu" class="cont_menu">
+            <a href="#close" title="Close" class="close">
+                <img src="./img/icon_close.png" alt="">
+            </a>
+            <div>
+                <ul class="menu_mobile">
+                    <li><a href="./funcionamiento.html">Funcionamiento</a></li>
+                    <li><a href="./aplicaciones.html">Aplicaciones</a></li>
+                    <li><a href="./seguridad.html">Seguridad</a></li>
+                    <li><a href="./thermonoxilo.html">ThermoNoxilo® - Tratamiento de silos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="form_info" id="fondo_blanco">
+            <div>
+                <div class="centrado">
+                    <h1 id="titulos_secciones">Contacto & Colaboradores</h1>
+                </div>
+            </div>
+            <table border="0" width="70%"  class="center wrap"  cellspacing="15"  >
+                <tr>
+                    <td colspan="2">
+                        <P id="titulo18">
+                            Soporte técnico :
+                        </P>
+                    </td>
+                <br>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <P class="justificado">
+                            Adaptamos nuestros servicios perfectamente a sus necesidades prácticas y para cumplir las expectativas de los clientes lo mejor posible.<br><br>
+
+                            En conjunto con los tratamientos, nuestro servicio otorga un completo asesoramiento técnico, 
+                            valoramos especialmente el contacto directo con nuestros cliente para adaptar nuestros servicios 
+                            perfectamente a sus exigencias prácticas y para cumplir las expectativas de los clientes lo mejor 
+                            posible, así como el seguimiento post-servicio. 
+                        </P>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form name="form" id="form" onChange="dirChange()" enctype="text/plain" name="informacion_contacto" action="mailto:jolopgem@gmail.com" method="post">
+                            <table border="0" width="45%"  align="left" cellspacing="20" cellpading="10">
+                                <tr align="center">
+                                    <td colspan="2"><p id="titulo18">¿Necesita mayores informes o cotización?</p> </td>
+
+                                </tr>
+
+
+                                <tr align="left">
+                                    <td colspan="2"><p>* Campo requerido</p></td>
+                                </tr>
+
+                                <tr align="left">
+                                    <td><p>Nombre * :</p></td>
+                                    <td><input name="nombre" type="text" class="field" maxlength="15" required></td>
+                                </tr>
+                                <tr align="left">
+                                    <td><p>Correo electronico * :</p></td>
+                                    <td><input name="email" type="email" class="field" maxlength="50" required></td>
+                                </tr>
+                                <tr align="left">
+                                    <td><p>Asunto * :</p></td>
+                                    <td><input name="asunto" type="text" class="field" maxlength="30" required></td>
+                                </tr>
+                                <tr align="left">
+                                    <td><p>Código Postal * :</p></td>
+                                    <td><input name="cp" type="text" class="field" maxlength="10" placeholder="Informes/Cotización" required></td>
+                                </tr>
+                                <tr align="left">
+                                    <td><p>País * :</p></td>
+                                    <td><input name="pais" type="text" class="field" maxlength="50" placeholder="México"required></td>
+                                </tr>
+                                <tr align="left">
+                                    <td><p>Ciudad * :</p></td>
+                                    <td><input name="ciudad" type="text" class="field" maxlength="50"required></td>
+                                </tr>
+                                <tr align="left">
+                                    <td><p>Mensaje * :</p></td>
+                                    <td><textarea class="field"></textarea required> <br/></td>
+                                </tr>
+                                <tr align="left">
+                                    <td><p>Enviame una copia </p></td>
+                                    <td><input id="copia" name="copia" type="checkbox" value="no"></td>
+                                </tr>
+                                <tr align="left">
+                                    <td><p>Política de privacidad - He leído y aceptado las <span id="politicas"><a href="./servicio_tecnico.html">políticas de privacidad</a></span></p></td>
+                                    <td><input name="politica" type="checkbox" value="no"></td>
+                                </tr>
+                                <tr align="left"></align>
+                                    <td><p>Soy *</p></td>
+                                    <td>
+                                        <select name="quesoy" class="campo" id="selector">
+                                            <option>Persona Privada</option>
+                                            <option>Profesional</option>
+                                            <option>Empresa</option>
+                                            <option>Control de Plagas</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><p class="left-content">
+                                            <input type="submit" class="boton" id="envia datos" value="Enviar">
+                                            <input type="reset" value="Reset" class="boton">
+                                    </td>
+                                    </p> 
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                    <td>
+                        <table border="0" width="55%"   align="right" cellspacing="25" cellpading="5">
+                            <tr align="center">
+                                <td>
+                                    <p id="titulo18">Latinoamérica / Norteamérica </p>
+                                </td>
+                            </tr>
+                            <tr align="left">
+                                <td>
+                                    <p class="justificado" id="centrar_texto_contacto">
+                                        ThermoNox® GmbH es el exclusivo proveedor de tratamientos de calor para el sector alimentario y 
+                                        otros afines, en Latinoamérica y Norteamérica, el servicio es proporcionado en colaboración con 
+                                        Grupo La Moderna de manera profesional y especializada en la tecnología del tratammiento.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>
+                                    <p id="titulo18">Europa / Asia / África / Oceanía</p>
+                                </td>
+                            </tr>
+                            <tr align="left">
+                                <td>
+                                    <p class="justificado">
+                                        Para informes de colaboración de ThermoNox® en éstas regiones, puede contactar con 
+                                        Thermonox Gobal: thermonox.de Nosotros alquilamos y vendemos equipos ThermoNox®. 
+                                        Adicionalmente ofrecemos un amplio asesoramiento técnico, formación y seminarios.
+                                    </p>
+                                </td>
+                            </tr>
+
+
+                        </table>
+                    </td>
+                </tr>
+            </table> <br>
+        </div>
+        <img src="./img/ThermoNox-truck-1024x683.jpg" alt="HTML5 Icon" width="100%" height="auto">
+        <footer class="footer_thermonox">
+            <div class="info_footer">
+                <div class="info">
+                    <p><a href="aviso-legal.html" class="texto_footer_link">Aviso legal</a> <span class="separador">|</span> <a href="politica_de_privacidad.html" class="texto_footer_link">Politica de privacidad</a></p>
+                </div>
+                <div class="info">
+                    <p><a class="texto_footer_normal">ThermoNox®</a> <span class="separador">|</span> <a class="texto_footer_normal">Thermonox.de </a><span class="separador">|</span><a class="texto_footer_normal"> info@thermonox.de</a></p>
+                </div> 
+            </div>
+        </footer>
+
+    </body> 
+</html> 
