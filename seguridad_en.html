@@ -4,54 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=s, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" sizes="32x32" href=".//img/favicon-32x32.png">
-    <link rel="stylesheet" href="style_en.css">
-    <link rel="stylesheet" href="thermonox_en.css">
+    <link rel="icon" type="image/jpg" sizes="32x32" href=".///img/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="thermonox.css">
     <title>Safety - ThermoNox®</title>
 </head>
 <body>
     <div class="encabezado">
-        <div class="tel-con-idi centrado">
-            <div class="info_encabezado" id="telefono">
-                <p>000 000 0000</p>
+        <div class="logo">
+            <a title="ThermoNox®" href="index_en.html"><img src="./img/thermonox-neu-logo-xl.png" alt="ThermoNox®" id="logo_inicial"></a>
+        </div>
+        <div class="menu">
+            <ul class="nav">
+                <li><a href="./index_en.html">Home</a></li>
+                <li><a href="#">ThermoNox®</a>
+                    <ul id="submenu">
+                        <li><a href="./funcionamiento_en.html">Performance</a></li>
+                        <li><a href="./aplicaciones_en.html">Applications</a></li>
+                        <li><a href="./seguridad_en.html">Safety</a></li>
+                        <li><a href="./thermonoxilo_en.html">ThermoNoxilo® - Silo Treatment</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contacto_colaboradores_en.html">Contact & Collaborators</a></li>
+            </ul>
+        </div>
+        <div class="contacto">
+            <div class="info_encabezado alineamiento" id="telefono">
+                <p>Give us a call! Num: 462 103 0321</p>
             </div>
-            <div class="info_encabezado" id="contacto">
-                <p>correo@email.com</p>
+            <div class="info_encabezado alineamiento" id="contacto">
+                <p>Email us! jorge.iturralde@lamoderna.com.mx</p>
             </div>
             <div class="info_encabezado" id="idioma">
-                <div class="dropdown">
-                    <button class="dropbtn">English</button>
-                    <div class="dropdown-content">
-                      <a href="./index.html">Español</a>
-                      <a href="./index_en.html">English</a>
+                <div class="seleccion_idioma">
+                    <button class="boton_idioma">English</button>
+                    <div class="idiomas">
+                      <a href="./index.html">Spanish</a>
+                      <a href="./index_en.html">Egnlish</a>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
-        <a href="#openMenu" class="icon_menu">
-            <img src="./img/icon_menu.png" alt="">
-        </a>
-        <div class="imagen_encabezado centrado">
-            <a title="ThermoNox®" href="index_en.html"><img src="./img/thermonox-neu-logo-xl.png" alt="ThermoNox®" id="logo_inicial" class="responsive"></a>
-        </div>
-        <div class="centrado">
-            <div class="menu_pantalla">
-                <ul class="nav">
-                    <li><a href="./index_en.html">HOME</a></li>
-                    <li><a href="">THERMONOX®</a>
-                        <ul class="submenu">
-                            <li><a href="./funcionamiento_en.html">Description</a></li>
-                            <li><a href="./aplicaciones_en.html">Application</a></li>
-                            <li><a href="./seguridad_en.html">Safety</a></li>
-                            <li><a href="./thermonoxilo_en.html">ThermoNoxilo® - Silo treatment</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="./servicio_tecnico_en.html">CONTACT & NETWORK</a></li>
-                </ul>
-            </div>
-        </div>
+        <a href="#openMenu" class="icon_menu"><img src="./img/icon_menu.png" alt=""></a>
     </div>
+
     <div id="openMenu" class="cont_menu">
         <div>
             <a href="#close" title="Close" class="close">
@@ -61,79 +57,67 @@
                 <a href="./index_en.html">HOME</a>
                 <a href="#the_menu">THERMONOX®</a>
                 <a href="./thermonoxilo_en.html">THERMONOXILO®</a>
-                <select>
-                    <option>English</option>
-                    <option>Español</option>
-                </select>
-                <a href="./servicio_tecnico_en.html">CONTACT & NETWORK</a>
+                <div class="idiomas_mobile">
+                    <a href="./index.html">Spanish</a>
+                    <a href="./index_en.html">English</a>
+                </div>
+                <a href="./contacto_colaboradores_en.html">CONTACT & COLLABORATORS</a>
             </div>
         </div> 
     </div>
+
     <div id="the_menu" class="cont_menu">
         <a href="#close" title="Close" class="close">
             <img src="./img/icon_close.png" alt="">
         </a>
         <div>
             <ul class="menu_mobile">
-                <li><a href="./funcionamiento_en.html">Description</a></li>
-                <li><a href="./aplicaciones_en.html">Application</a></li>
+                <li><a href="./funcionamiento_en.html">Performance</a></li>
+                <li><a href="./aplicaciones_en.html">Applications</a></li>
                 <li><a href="./seguridad_en.html">Safety</a></li>
                 <li><a href="./thermonoxilo_en.html">ThermoNoxilo® - Silo treatment</a>
                 </li>
             </ul>
         </div>
     </div>
-    <section class="container_thermonox">
-        <div class="titulos_secciones_c">
-            <div class="centrado">
-                <h1 id="titulos_secciones">Safety</h1>
-            </div>
-        </div>
-        <div class="info_thermonox" >
-            <div class="texto titulo_texto">
-                THE THERMONOX® TREATMENT OFFERS OUR CUSTOMERS AND USERS THE FOLLOWING GUARANTEES            </div>
-            <div class="lista_thermonox" id="text16">
+    <div class="titulo_pagina">
+        <h1 class="titulo_p">Safety</h1>
+    </div>
+    <div class="seguridad">
+        <div class="encuadre">
+            <div class="cuadro_gris">
+                <p class="titulo_info_seg">THE THERMONOX® TREATMENT OFFERS OUR CUSTOMERS AND USERS THE FOLLOWING GUARANTEES</p>
                 <ul>
                     <li>Use in production plants with danger of dust explosion (EU Regulation 94/9/EG, also known as ATEX 100a)</li>
                     <li>Meets the requirements of classification ex II 3 D</li>
                     <li>It is controlled and authorized for permanent use in zone 22</li>
                 </ul>
             </div>
-        </div>
-        <div class="info_thermonox">
-            <div class="texto titulo_texto">
-                PREVENTS HEAT DAMAGE           
-            </div>
-            <div class="texto" id="text16">
-                In each ThermoNox® heater there are 3 thermostats that ensure that the temperature for disinsection remains constant between 50º C and 60º C thanks to an automatic on and off system.<br>
-
-                <br>No heat damage
+            <div class="cuadro_naranja">
+                <p class="titulo_info_seg">PREVENTS HEAT DAMAGE</p>
+                <p>
+                    In each ThermoNox® heater there are 3 thermostats that ensure that the temperature for disinsection remains constant between 50º C and 60º C thanks to an automatic on and off system.
+                </p><br><br><p>No heat damage</p>
             </div>
         </div>
-        <div class="info_thermonox">
-            <div class="texto titulo_texto">
-                SAFETY AND EFFECTIVENESS           
+        <div class="encuadre">
+            <div class="cuadro_naranja">
+                <p class="titulo_info_seg">SAFETY AND EFFECTIVENESS</p>
+                <p>The system has been approved by the FSA (Research Institute for the Safety of Applied Systems and Occupational Medicine) for use in the extermination of pests in the cultivation and handling of cereals and flour through heating to about 50°C.</p>
             </div>
-            <div class="texto" id="text16">
-                The system has been approved by the FSA (Research Institute for the Safety of Applied Systems and Occupational Medicine) for use in the extermination of pests in the cultivation and handling of cereals and flour through heating to about 50°C.
-            </div>
-        </div>
-        <div class="info_thermonox">
-            <div class="texto titulo_texto">
-                PROTECTION BEFORE THE INSURANCE COMPANY           
-            </div>
-            <div class="texto" id="text16">
-                A leading German insurance company has found that the system does not increase risks and therefore is not a factor in increasing the insurance policy.            
+            <div class="cuadro_gris">
+                <p class="titulo_info_seg">PROTECTION BEFORE THE INSURANCE COMPANY</p>
+                <p>A leading German insurance company has found that the system does not increase risks and therefore is not a factor in increasing the insurance policy.</p>
             </div>
         </div>
-    </section>
+    </div>    
     <footer class="footer_thermonox">
         <div class="info_footer">
             <div class="info">
-                <p><a href="aviso-legal_en.html" class="texto_footer_link">Legal Warning</a> <span class="separador">|</span> <a href="politica_de_privacidad_en.html" class="texto_footer_link">Privacy Policy</a></p>
+                <p><a href="aviso_legal_en.html" class="texto_footer_link">Legal warning</a> <span class="separador">|</span> <a href="politica_en.html" class="texto_footer_link">Privacy policies</a></p>
             </div>
             <div class="info">
-                <p><a class="texto_footer_normal">ThermoNox®</a> <span class="separador">|</span> <a class="texto_footer_normal">Thermonox.de </a><span class="separador">|</span><a class="texto_footer_normal"> info@thermonox.de</a></p>
+                <p><a class="texto_footer_normal">ThermoNox®</a> <span class="separador">|</span> <a class="texto_footer_normal">462 103 0321 </a><span class="separador">|</span><a class="texto_footer_normal"> jorge.iturralde@lamoderna.com.mx</a></p>
             </div> 
         </div>
     </footer>

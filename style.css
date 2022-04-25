@@ -16,122 +16,28 @@
 }
 
 html {
-    background-color: #5b3b34;
+    background-color: #2A2F3D;
 }
 
-.dropbtn {
-    background-color:white;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-  
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 70px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-  
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-  
-.dropdown-content a:hover {background-color: #ddd;}
-  
-.dropdown:hover .dropdown-content {display: block;}
-  
-.dropdown:hover .dropbtn {background-color: #DF4D17;}
-
-#titulos_secciones {
-    text-align: center;
-}
-
-.centrado {
+.encabezado  {
     display: flex;
-    justify-content: center;
-}
-
-.lista_thermonox {
-    list-style-image: url(./img/check-lg.png) !important;
-}
-
-.titulo_texto {
-    font-weight: bold;
-    font-size: 22px;
-    padding-bottom: 10px;
-}
-
-.encabezado {
-    background-color: #eb5b25 ;
-    width: 100%;
-    background-image: url(./img/thermonox-cut.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.tel-con-idi {
-    color: white;
-}
-
-.info_encabezado {
-    padding: 0px 100px 0px 100px;
-    padding-top: 16px;
-}
-
-.icon_menu{
-    display: none;
-}
-
-.imagen_encabezado {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    flex-direction: row;
+    background-color: #2A2F3D;
+    padding: 10px;
 }
 
 #logo_inicial {
-    width: 400px;
+    width: 200px;
+    margin-right: 15px;
 }
 
-.justificado {
-    text-align: justify;
+.menu {
+    flex-grow: 2;
+    border-radius: 10px;
 }
 
-.idiom{
-    align-self: flex-start;
-    width: 100px;
-    height: 30px;
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#idioma {
-    padding-top: 0px !important;
-}
-
-.menu_pantalla {
-    color: #fab900;
-    padding-bottom: 16px;
-}
-
-.nav li {
-    list-style: none !important;
-}
-
-.nav {
-    font-size: 18px 
+ul{
+    list-style:none;
 }
 
 .nav > li {
@@ -139,34 +45,21 @@ html {
 }
 
 .nav li a {
-    color:#fab900;
+    background-color: #1E212B;
+    color:#fff;
     text-decoration:none;
-    padding:10px 12px;
+    padding:15px 12px;
     display:block;
 }
 
 .nav li a:hover {
-    background-color:#DF4D17;
-}
-
-.submenu {
-    background-color: #F6F6F6;
-}
-
-.submenu li a{
-    color: black;
-    font-size: 16px;
-    text-align: justify;
-}
-
-.submenu li a:hover{
-    color: white;
+    background-color:#181B23;
 }
 
 .nav li ul {
     display:none;
     position:absolute;
-    max-width: 161px;
+    min-width:140px;
 }
 
 .nav li:hover > ul {
@@ -178,15 +71,77 @@ html {
 }
 
 .nav li ul li ul {
-    right:-160px;
+    right:-140px;
     top:0px;
+}
+
+#submenu li a {
+    background-color: rgb(236, 236, 236);
+    color: black;
+}
+
+#submenu li a:hover {
+    background-color: #BFBFBF;
+}
+
+.contacto {
+    display: flex;
+    color: white;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.boton_idioma {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+  
+.seleccion_idioma {
+    position: relative;
+    display: inline-block;
+}
+  
+.idiomas {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 70px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.idiomas a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.idiomas a:hover {
+    background-color: #ddd;
+}
+  
+.seleccion_idioma:hover .idiomas {
+    display: block;
+}
+  
+.seleccion_idioma:hover .boton_idioma {
+    background-color: #1E212B;
+    color: white;
+}
+
+.alineamiento {
+    padding-top: 15px;
 }
 
 .cont_menu {
 	position: fixed;
     width: 100vw;
     height: 100vh;
-	background-color: #eb5b25 ;
+	background-color: #2A2F3D ;
 	z-index: 99999;
 	opacity:0;
 	pointer-events: none;
@@ -225,7 +180,6 @@ html {
 .menu_mobile > select{
     background-color: white;
     color: black !important;
-    color: rgb(255, 187, 0);
     font-size: 18px;
     text-align: center;
     cursor: pointer;
@@ -239,92 +193,120 @@ html {
 	width: 30px;
 }
 
-#fondo_blanco {
-    background-color: white;
+.icon_menu {
+    display: none;
 }
 
-.info_producto {
-    background-color: rgb(255, 171, 0) !important;
+#presentacion {
+    background-image: url(./img/kino.jpg);
+    background-repeat:no-repeat;
+    background-size: 100%;
     color: white;
 }
 
-.titulos {
-    text-align: center;
-    padding-top: 30px;
+.titulos_info {
+    padding-top: 300px;
+    display: flex;
+    justify-content: center;
 }
 
-.titulos h1 {
-    font-weight:normal;
+.espacio {
+    padding: 10px;
 }
 
-#titulo_100 {
-    font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 30px;
+#thermonox {
+    font-size: 50px;
+    background-color: #FF6732;
+    padding: 10px;
+}
+
+.linea_vertical {
+    height:11vh;
+    width:.2vw;
+    border-width:0;
+    color:white;
+    background-color:white;
+}
+
+.atex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.atex_centrado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
 }
 
 #ATEX {
-    height: 70px;
+    width: 70px;
 }
 
-#titulo_atex {
-    font-weight: normal;
-}
-
-.datos_thermonox {
-    padding-top: 20px;
-    padding-bottom: 30px;
-}
-
-.lista_datos {
-    background-color: #eb5b25;
-    width: 1200px;
-    font-size: 30px;
-    border-radius: 20px;
+.texto_descripcion {
+    font-size: 18px;
+    display: flex;
     text-align: justify;
-    padding: 50px;
-    list-style-image: url(./img/image_datos.png);
+    padding: 20px;
+    background-color: #FF6732;
 }
 
-.texto_info {
-    font-family: fuente_info;
+.descripcion {
+    padding: 10px;
 }
 
-footer {
-    background-color: #5b3b34;
+.linea_vertical_des {
+    height:7vh;
+    width:.01vw;
+    border-width:0;
+    color:white;
+    background-color:white;
 }
 
 .videos_llamadas {
-    padding-top: 30px;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    background-color: white;
 }
+
 
 .videos {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.espacio_video {
-    display: flex;
-    justify-content: center;
-    padding: 60px;
+.img_video {
+    width: 560px;
+    height: 315px;
+}
+
+#linea_llamadas {
+    height:100%;
+    width: 1px;
+    border-width:0;
+    color:grey;
+    background-color:grey;
+    margin: 0px 20px;
 }
 
 .llamadas {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding-bottom: 40px;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .llamada {
     width: 500px;
     padding: 30px;
-}
-
-#texto_thermonox {
-    padding: 0px 400px 70px;
-    font-size: 18px;
+    background-color: #FFD531;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 7px 10px #323232;
 }
 
 .titulo_llamada {
@@ -357,8 +339,11 @@ footer {
     min-height: 30px;
 }
 
+footer {
+    background-color: #2A2F3D;
+}
+
 .info_footer {
-    /* padding: 50px; */
     display: flex;
     justify-content: center;
 }
@@ -389,121 +374,146 @@ footer {
     color: white;
 }
 
-#titulos_secciones {
-    color: #eb5b25;
-    font-weight: normal;
-    font-size: 42px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: 35px;
+.titulo_pagina {
+    background-color: white;
+    display: flex;
+    justify-content: center;
 }
 
-#politicas {
-    text-decoration:underline;
-    cursor: pointer;
+.titulo_p {
+    padding: 50px 0px;
+    font-size: 50px;
+    color: #2A2F3D;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
-#politicas a {
-    color: #eb5b25;
+#acerca_thermonox {
+    list-style: disc;
 }
 
-@media screen and (max-width: 1310px) {
-    .encabezado{
-        grid-template-columns: repeat(3, 1fr) 260px;
-    }
+.lista_th {
+    background-color: #eb5b25;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: justify;
+    color: white;
+}
+
+#titulo_lista_thermonox {
+    font-weight: bold;
+}
+
+.texto_thermonox {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 0px 300px 40px;
 }
 
 @media screen and (max-width: 768px) {
+
     .encabezado {
-        display: grid;
-        align-items: center;
-        grid-gap: 0;
-        background-image: none;
+        display: flex;
+        justify-content: space-between;
     }
 
-    .info_encabezado{
+    .menu {
         display: none;
     }
 
-    .tel-con-idi {
-        padding-top: 0px;
-    }
-
-    .idiom{
-        display: none;
-    }
-
-    .menu_pantalla {
-        display: none;
-    }
-
-    nav{
+    .contacto {
         display: none;
     }
 
     #logo_inicial {
-        width: 200px;
-    }
-    
-    .imagen_encabezado {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        margin: 0;
     }
 
-    .icon_menu{
-        display: block;
-        cursor: pointer;
-        margin-left: 10px;
-        padding-right: 100px;
+    .icon_menu {
+        display: flex;
     }
 
     .icon_menu > img{
-        width: 30px;
-        height: 25px;
-    }
-
-    .close > img{
-        width: 20px;
-    }
-
-    .menu_mobile > select{
-        color: white;
-    }
-
-    .titulos h1 {
-        font-size: 22px;
-    }
-    
-    #ATEX {
+        width: 40px;
         height: 40px;
     }
-    
-    #titulo_atex {
-        font-size: 16px;
-    }
 
-    .lista_datos {
-        font-size: 20px;
-    }
-
-    .videos {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .llamadas {
-        flex-wrap: wrap;
-    }
-
-    .info_footer {
+    .idiomas_mobile {
+        background-color: white;
         display: flex;
         justify-content: center;
+        flex-direction: column;
+    }
+
+    .idiomas_mobile a{
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+    }
+
+    #presentacion {
+        background-image: none;
+        background-color: #2A2F3D;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 400px;
+    }
+
+    .titulos_info {
+        padding: 0;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .linea_vertical {
+        display: none;
+    }
+
+    .texto_descripcion {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .atex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .videos_llamadas {
+        display: flex;
         flex-wrap: wrap;
     }
 
-    #texto_thermonox {
-        padding: 0px 30px 70px;
+    .llamada {
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .info {
+        padding-right: 0;
+    }
+
+    #presentacion {
+        margin: 0;
+    }
+
+    .img_video {
+        width: 100%;
+        height: auto;
+    }
+
+    .texto_thermonox {
+        padding: 20px;
+    }
+
+    .titulo_p {
+        font-size: 40px;
+        text-align: center;
     }
 }
