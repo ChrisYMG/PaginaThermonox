@@ -8,17 +8,19 @@ body{
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 10px;
-  background: linear-gradient(135deg, #5a0002, #d98324);
+  align-items: flex-start;
+  background: #FF5733;
 }
 .container{
   max-width: 700px;
-  width: 100%;
   background-color: #fff;
   padding: 25px 30px;
-  border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .container .title{
   font-size: 25px;
@@ -51,7 +53,7 @@ form .input-box span.details{
   margin-bottom: 5px;
 }
 .user-details .input-box input{
-  height: 45px;
+  height: 40px;
   width: 100%;
   outline: none;
   font-size: 16px;
@@ -93,15 +95,15 @@ form .input-box span.details{
  #dot-2:checked ~ .category label .two,
  #dot-3:checked ~ .category label .three,
  #dot-4:checked ~ .category label .four{
-   background: #FFC300;
-   border-color: #5a0002;
+   background: #FF5733;
+   border-color: #FF5733;
  }
  form input[type="radio"]{
    display: none;
  }
  form .button{
-   height: 45px;
-   margin: 35px 0
+   height: 40px;
+   margin: 30px 0
  }
  form .button input{
    height: 100%;
@@ -114,12 +116,13 @@ form .input-box span.details{
    letter-spacing: 1px;
    cursor: pointer;
    transition: all 0.3s ease;
-   background: linear-gradient(135deg, #ffca1b, #FF5733);
+   background: #ffca1b;
  }
  form .button input:hover{
   /* transform: scale(0.99); */
-  background: linear-gradient(-135deg,  #ffca1b, #FF5733);
+  background: #FF5733;
   }
+
  @media(max-width: 600px){
  .container{
   max-width: 100%;
@@ -143,4 +146,8 @@ form .user-details .input-box{
   .container .content .category{
     flex-direction: column;
   }
+}
+
+.regresar{
+  margin-top: 30px;
 }
