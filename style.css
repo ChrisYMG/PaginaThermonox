@@ -350,6 +350,10 @@ footer {
 
 .info {
     padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .texto_footer {
@@ -359,6 +363,14 @@ footer {
 .texto_footer_link {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
+}
+
+.texto_footer_button{
+    background-color: transparent;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 10px 0;
+    cursor: pointer;
 }
 
 .texto_footer_link:hover {
@@ -415,6 +427,28 @@ footer {
 #aviso_importante {
     background-color: #FF6732;
     color: white;
+}
+
+.ver_preguntas{
+    cursor: pointer;
+    background-color: transparent;
+    color: #FFD531;
+    font-size: 16px;
+    padding: 20px;
+    background-color: #eb5b25;
+    font-weight: bold;
+}
+
+.view_pdf{
+    width: 70%;
+    height: 150vh;
+    display: none;
+}
+
+.ver{
+    width: 70%;
+    height: 150vh;
+    display: block;
 }
 
 @media screen and (max-width: 768px) {
@@ -520,5 +554,17 @@ footer {
     .titulo_p {
         font-size: 40px;
         text-align: center;
+    }
+
+    .view_pdf{
+        width: 100%;
+        height: 70vh;
+        display: none;
+    }
+    
+    .ver{
+        width: 100%;
+        height: 70vh;
+        display: block;
     }
 }

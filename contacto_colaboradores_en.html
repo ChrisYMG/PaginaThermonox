@@ -108,9 +108,14 @@
             For reports of ThermoNox® collaboration in these regions, you can contact Thermonox Global: thermonox.de We rent and sell ThermoNox® equipment. Additionally, we offer extensive technical advice, training and seminars.
         </p>
         <div align="center" style="margin: 20px 0;">
-            <a href="pdf/PDF de prueba.pdf" download="frequentQuestions.pdf" class="subtitulo" style="color: #FFCA00;">Frequent Questions</a>
+            <input id="view_pdf" type="button" value="See frequently asked questions" class="ver_preguntas">
+            <a href="pdf/PDF de prueba.pdf" download="pregunstasFrecuentes.pdf" class="subtitulo" style="color: #FFCA00;">Dowwnload frequently asked questions</a>
         </div>
    </div>
+    
+   <center>
+    <iframe id="iframe_pdf" src="pdf/PDF de prueba.pdf" frameborder="0" class="view_pdf"></iframe>
+   </center>
        
    <!-- Final Contenido -->
 
@@ -118,14 +123,21 @@
    <footer class="footer_thermonox">
     <div class="info_footer">
         <div class="info">
-            <p><a href="pdf/avisoPivacidad.pdf" download="privacyPolicies.pdf" class="texto_footer_link" style="text-decoration:underline;">Privacy policies</a></p>
-            
+        <input id="view_pdfp" type="button" value="See privacy policies" class="texto_footer_button" style="padding: 0;">
+            <p><a href="pdf/avisoPivacidad.pdf" download="avisoPrivacidad.pdf" id="view_privacidad" class="texto_footer_link"
+                    style="text-decoration:underline;">Privacy policies</a></p>
         </div>
         <div class="info">
-            <p><a class="texto_footer_normal">ThermoNox®</a> <span class="separador">|</span> <a class="texto_footer_normal">462 103 0321 </a><span class="separador">|</span><a class="texto_footer_normal"> jorge.iturralde@lamoderna.com.mx</a></p>
-        </div> 
+            <p><a class="texto_footer_normal">ThermoNox®</a> <span class="separador">|</span> <a
+                    class="texto_footer_normal">462 103 0321 </a><span class="separador">|</span><a
+                    class="texto_footer_normal"> jorge.iturralde@lamoderna.com.mx</a></p>
+        </div>
     </div>
 </footer>
+<center>
+    <iframe id="iframe_pdfp" src="pdf/PDF de prueba.pdf" frameborder="0" class="view_pdf"></iframe>
+</center>
+<script src="js/view_pdf.js"></script>
    <!-- Final Footer -->
 
     <script>
