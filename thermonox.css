@@ -1,0 +1,342 @@
+.aplicaciones {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    text-align: justify;
+    background-color: #eeeeee;
+    padding-top: 20px;
+}
+
+.descripcion {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+#informacion_thermonox {
+    display: flex;
+    justify-content: center;
+}
+
+.llamada_info_ap {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_info_ap {
+    width: 500px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: black;
+}
+
+#resaltado_texto {
+    margin-bottom: 70px;
+    font-weight: bold;
+}
+
+.fondo_texto {
+    background-color: #fdda4b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.info_aplicaciones {
+    background-color: #eb5b25;
+    color: white;
+    box-shadow: none;
+}
+
+.imagen_th {
+    width: 1200px; 
+}
+
+.secado ul{
+    list-style-image: url(./img/check-lg.png);   
+}
+
+.secado_limitaciones {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding: 70px;
+    text-align: justify;
+}
+
+.centrado_imagen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 60px;
+    background-color: #494949;
+}
+
+.secado {
+    width: 600px;
+    padding-right: 80px;
+}
+
+.limitaciones{
+    width: 500px;
+}
+
+.limitaciones ul{
+    list-style: disc;
+}
+
+.funcionamiento_thermonox_datos {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    background-image: url(./img/Imagenes/Equipos/P1088370.JPG);
+    background-repeat:no-repeat;
+    background-size: 100%;
+    padding: 140px;
+}
+
+.primer_texto {
+    background-color: #eb5b25;
+    width: 700px;
+    margin-right: 50px;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.segundo_texto {
+    background-color: #fdda4b;
+    width: 700px;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#titulo_desinfeccion {
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+#info_titulo {
+    font-size: 25px;
+    text-align: center;
+    padding: 60px;
+    color: #FF6732;
+}
+
+.info_thermonox {
+    background-color: white;
+}
+
+.line {
+    background-color: lightgrey;
+    padding: 1px;
+    margin: 8px;
+}
+
+.lista {
+    padding: 0px 200px;
+    padding-bottom: 40px;
+    text-align: justify;
+    color: black;
+}
+
+.lista ul {
+    list-style: disc;
+}
+
+.parte_final {
+    background-color: #eb5b25;
+    color: white;
+    text-align: center;
+    padding: 50px 50px 10px;
+}
+
+.lista_ventajas {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color:#eb5b25;
+    padding-bottom: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.columna{
+    width: 700px;
+    margin: 30px;
+}
+
+.primera_columna {
+    width: 700px;
+    margin: 30px;
+}
+
+.segunda_columna {
+    width: 700px;
+    margin: 30px;
+}
+
+.ventajas ul {
+    list-style-image: url(./img/image_datos.png);
+}
+
+.seguridad {
+    color: white;
+    background-color: #eeeeee;
+    padding:60px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.titulo_ventajas {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.encuadre {
+    display: flex;
+    justify-content: center;
+}
+
+.encuadre ul {
+    list-style-image: url(./img/image_datos.png);
+}
+
+.cuadro_gris {
+    background-color: #494949;
+    padding: 40px;
+    margin: 30px;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo_info_seg {
+    width: 500px;
+    font-weight: bold;
+    padding-bottom: 50px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.cuadro_naranja {
+    background-color: #ec622f;
+    padding: 40px;
+    margin: 30px;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto_naranja {
+    color: #FF6732;
+}
+
+@media screen and (max-width: 768px) {
+    .aplicaciones {
+        flex-wrap: wrap;
+    }
+    .descripcion {
+        
+        padding: 0 0 0 0;
+    }
+    .informacion_aplicaciones {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 40px;
+    }
+    .titulo_info_ap {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .funcionamiento_thermonox_datos {
+        flex-wrap: wrap;
+        padding: 0 0 0 0px;
+        width: 100%;
+    }
+    .trata_da {
+        color: white;
+        padding:0px;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .seg_prot {
+        color: white;
+        padding:0px;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .lista {
+        padding: 60px;
+    }
+    .funcionamiento_thermonox_datos {
+        background-image: none;
+        background-color: white;
+    }
+    .primer_texto {
+        width: 100%;
+        margin: 0;
+        padding: 50px;
+    }
+    .segundo_texto {
+        padding: 50px;
+    }
+    .titulo_p {
+        font-size: 40px;
+    }
+    .lista_ventajas {
+        width: 100%;
+        flex-wrap: wrap;
+        text-indent: 2px;
+    }
+    /* .primera_columna {
+        width: 140px;
+    } */
+    #resaltado_texto {
+        margin: 0;
+    }
+    .fondo_texto {
+        margin-bottom: 50px;
+        padding: 40px;
+    }
+    .seguridad {
+        padding: 0;
+        font-size: 18px;
+    }
+    .imagen_th {
+        width: 100%;
+    }
+    .centrado_imagen {
+        padding: 10px;
+    }
+    .secado_limitaciones {
+        flex-wrap: wrap;
+    }
+    .secado {
+        padding-right: 0;
+        padding-bottom: 40px;
+    }
+    .encuadre {
+        flex-wrap: wrap;
+        font-size: 16px;
+    }
+    .titulo_info_seg {
+        font-size: 16px;
+    }
+}

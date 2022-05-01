@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" sizes="32x32" href=".///img/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto-col.css">
+    <title>Contact & Collaborators - ThermoNox®</title>
+</head>
+<body>
+    <div class="encabezado">
+        <div class="logo">
+            <a title="ThermoNox®" href="index_en.html"><img src="./img/thermonox-neu-logo-xl.png" alt="ThermoNox®" id="logo_inicial"></a>
+        </div>
+        <div class="menu">
+            <ul class="nav">
+                <li><a href="./index_en.html">Home</a></li>
+                <li><a href="#">ThermoNox®</a>
+                    <ul id="submenu">
+                        <li><a href="./funcionamiento_en.html">Performance</a></li>
+                        <li><a href="./aplicaciones_en.html">Applications</a></li>
+                        <li><a href="./seguridad_en.html">Safety</a></li>
+                        <li><a href="./thermonoxilo_en.html">ThermoNoxilo® - Silo Treatment</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contacto_colaboradores_en.html">Contact & Collaborators</a></li>
+            </ul>
+        </div>
+        <div class="contacto">
+            <div class="info_encabezado alineamiento" id="contacto">
+                <p><a href="./contacto_colaboradores_en.html" id="escribenos">Email us to get in contact!</a></p>
+            </div>
+            <div class="info_encabezado" id="idioma">
+                <div class="seleccion_idioma">
+                    <button class="boton_idioma">English</button>
+                    <div class="idiomas">
+                      <a href="./index.html">Spanish</a>
+                      <a href="./index_en.html">Egnlish</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#openMenu" class="icon_menu"><img src="./img/icon_menu.png" alt=""></a>
+    </div>
+
+    <div id="openMenu" class="cont_menu">
+        <div>
+            <a href="#close" title="Close" class="close">
+                <img src="./img/icon_close.png" alt="">
+            </a>
+            <div class="menu_mobile">
+                <a href="./index_en.html">HOME</a>
+                <a href="#the_menu">THERMONOX®</a>
+                <a href="./thermonoxilo_en.html">THERMONOXILO®</a>
+                <div class="idiomas_mobile">
+                    <a href="./index.html">Spanish</a>
+                    <a href="./index_en.html">English</a>
+                </div>
+                <a href="./contacto_colaboradores_en.html">CONTACT & COLLABORATORS</a>
+            </div>
+        </div> 
+    </div>
+
+    <div id="the_menu" class="cont_menu">
+        <a href="#close" title="Close" class="close">
+            <img src="./img/icon_close.png" alt="">
+        </a>
+        <div>
+            <ul class="menu_mobile">
+                <li><a href="./funcionamiento_en.html">Performance</a></li>
+                <li><a href="./aplicaciones_en.html">Applications</a></li>
+                <li><a href="./seguridad_en.html">Safety</a></li>
+                <li><a href="./thermonoxilo_en.html">ThermoNoxilo® - Silo treatment</a>
+                </li>
+            </ul>
+        </div>
+    </div> <br>
+   <!-- Termina Encabezado -->
+   
+   <div class="titulo_pagina" id="contacto_titulo">
+        <h1 class="titulo_p" id=contacto>Contact & Collaborators</h1>
+    </div>
+   <!-- Inicio Contenido -->
+   <div class="soporte_tecnico">
+        <h2 > Technical support: </h2>
+        <p class="subtitulo">
+            We tailor our services perfectly to your practical needs and to meet customer expectations as well as possible. <br><br>
+
+            In conjunction with the treatment, our service provides complete technical advice, we especially value direct contact with our clients to adapt our services perfectly to their practical demands and to meet the expectations of the clients as best as possible, as well as post-service follow-up.
+        </p>
+        <img src="./img/Imagenes/Soporte_tecnico/P1088400.JPG"class="centrame"  id="imagen_cont"><br>
+        <div class="acordeon"> 
+            <button type="button" class="boton__acordeon">Do you need more information or a quote?</button>
+            <div class="contenido__acordeon">
+            <a href="Form_en.html" id="padding_form"> Contact Form </a> 
+            </div> <br>
+            <div id="aliados">
+                <h1 align="center"> Latin America/ North America </h1>
+                <p class="subtitulo">
+                    ThermoNox® GmbH is the exclusive supplier of heat treatments for the food sector and other related sectors in Latin America and North America. The service is provided in collaboration with Grupo La Moderna in a professional and specialized manner in treatment technology.
+                </p>
+                <h1 align="center"> Europe / Asia / Africa / Oceania </h1>
+                <p class="subtitulo">
+                    For reports of ThermoNox® collaboration in these regions, you can contact Thermonox Global: thermonox.de We rent and sell ThermoNox® equipment. Additionally, we offer extensive technical advice, training and seminars.
+                </p>
+            </div>
+        </div>
+    </div>
+       
+   <!-- Final Contenido -->
+
+   <!-- Inicio Footer -->
+   <footer class="footer_thermonox">
+    <div class="info_footer">
+        <div class="info">
+            <p><a href="aviso_privacidad_en.html" class="texto_footer_link">Notice of Privacy</a></p>
+        </div>
+        <div class="info">
+            <p><a class="texto_footer_normal">ThermoNox®</a> <span class="separador">|</span> <a href="./contacto_colaboradores_en.html" class="texto_footer_link">Email us! </a><span class="separador">|</span><a href="preguntas_frecuentes_en.html" class="texto_footer_link"> Frequently asked questions</a></p>
+        </div>
+    </div>
+</footer>
+   <!-- Final Footer -->
+
+    <script>
+    document.querySelectorAll('.boton__acordeon').forEach(button =>{
+        button.addEventListener('click', () =>{
+            // Se puede descomentar esto para añadir una animacion, pero esto no lo deja ajustar su tamaño en tiempo real.
+            //const contenidoacordeon= button.nextElementSibling;
+            button.classList.toggle('boton__acordeon--activo');
+            //if (button.classList.contains('boton__acordeon--activo')){
+            //   contenidoacordeon.style.maxHeight = contenidoacordeon.scrollHeight + 'px';
+            //} else{
+            //    contenidoacordeon.style.maxHeight = 0;
+            //}
+        });
+    });
+    </script>         
+</body>
+</html>
