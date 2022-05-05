@@ -1,81 +1,88 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="FormStyle.css">
-    <link rel="icon" type="image/jpg" sizes="32x32" href="favicon-32x32.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="FormStyle.css">
+  <link rel="icon" type="image/jpg" sizes="32x32" href="favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 <body>
-<!-- Inicia Formulario -->
+  <!-- Inicia Formulario -->
   <div class="container">
     <div class="title">Contact us!</div>
     <div class="content">
-      <form action="https://formsubmit.co/jorge.iturralde@lamoderna.com.mx" method="POST">
+      <form action="https://formsubmit.co/cmejiagalindo@yahoo.com" method="POST">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Name *</span>
-            <input type="text" placeholder="Ingresa tu nombre completo" required>
+            <input name="nombre" type="text" placeholder="Enter your full name" required>
           </div>
           <div class="input-box">
             <span class="details">Business *</span>
-            <input type="text" placeholder="¿porque nos contactas?" required>
+            <input name="asunto" type="text" placeholder="Why do you contact us?" required>
           </div>
           <div class="input-box">
             <span class="details">Email *</span>
-            <input type="email" placeholder="introduce tu correo electronico" required>
+            <input name="email" type="email" placeholder="Enter your email" required>
           </div>
           <div class="input-box">
             <span class="details">Message *</span>
-            <textarea name="mensaje"  cols="40" rows="3" placeholder="introduce tu mensaje"> </textarea>
+            <textarea name="mensaje" cols="40" rows="3" placeholder="Enter your message"> </textarea>
           </div>
           <div class="input-box">
             <span class="details">ZIP Code *</span>
-            <input type="text" placeholder="ingresa tu codigo Postal" required>
+            <input name="cp" type="text" placeholder="Enter your postal code" required>
           </div>
           <div class="input-box">
             <span class="details">City *</span>
-            <input type="text" placeholder="Ingresa tu Ciudad" required>
+            <input name="ciudad" type="text" placeholder="Enter your City" required>
           </div>
           <div class="input-box">
             <span class="details">Country *</span>
-            <input type="text" placeholder="Ingresa tu Pais" required>
+            <input name="país" type="text" placeholder="Enter your country" required>
           </div>
         </div>
-        
+
         <div class="gender-details">
-          <input type="radio" name="gender" id="dot-1" required>
-          <input type="radio" name="gender" id="dot-2" required>
-          <input type="radio" name="gender" id="dot-3" required>
-          <input type="radio" name="gender" id="dot-4" required>
+          <input type="radio" id="dot-1">
+          <input type="radio" id="dot-2">
+          <input type="radio" id="dot-3">
+          <input type="radio" id="dot-4">
           <span class="gender-title">I am a</span>
           <div class="category">
             <label for="dot-1">
-            <span class="dot one"></span>
-            <span class="gender">Private Person</span>
-          </label>
-          <label for="dot-2">
-            <span class="dot two"></span>
-            <span class="gender">Professional</span>
-          </label>
-          <label for="dot-3">
-            <span class="dot three"></span>
-            <span class="gender">Company</span>
+              <span class="dot one"></span>
+              <span class="gender">Private Person</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Professional</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Company</span>
             </label>
             <label for="dot-4">
-                <span class="dot four"></span>
-                <span class="gender">Pest Control</span>
+              <span class="dot four"></span>
+              <span class="gender">Pest Control</span>
             </label>
           </div>
+          <center>
+            <p style="color: gray;">"By clicking on the send button, a copy of this form will be sent to your email"</p>
+          </center>
         </div>
         <div class="button">
-            <input type="submit" value="Send">
+          <input type="hidden" name="_autoresponse"
+            value="Thank you very much for contacting us here is the copy of the form sent" />
+          <input type="submit" value="Send">
         </div>
         <div class="button">
-            <input type="reset" value="Reset">
+          <input type="reset" value="Reset">
         </div>
         <div class="regresar">
-            <a href="./contacto_colaboradores_en.html"> Go back </a>
+          <a href="./contacto_colaboradores_en.html"> Go back </a>
         </div>
         <!-- Termina  Formulario -->
       </form>
@@ -83,4 +90,5 @@
   </div>
 
 </body>
+
 </html>
