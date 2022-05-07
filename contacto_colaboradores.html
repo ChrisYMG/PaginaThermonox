@@ -98,11 +98,11 @@
             seguimiento post-servicio.
         </p>
         <img src="./img/Imagenes/Soporte_tecnico/P1088400.JPG" class="centrame" id="imagen_cont"><br>
-        <div class="acordeon">
-            <button type="button" class="boton__acordeon">¿Necesita mayores informes o cotización?</button>
-            <div class="contenido__acordeon">
-                <a href="Form.html" id="padding_form"> Formulario de Contacto </a>
-            </div> <br>
+        <!-- Aqui esta el acordeon-->
+        <a href="Form.html">
+        <center><button class="button_form"><span>Necesita Más informes o una cotización  <br> ¡ Contáctenos !  </span></button>  </center>
+        </a>
+        <!-- Aqui esta el acordeon-->
             <div id="aliados">
                 <h1 align="center"> Latinoamérica / Norteamérica </h1>
                 <p class="subtitulo">
@@ -137,20 +137,5 @@
         </div>
     </footer>
         <!-- Final Footer -->
-
-    <script>
-        document.querySelectorAll('.boton__acordeon').forEach(button => {
-            button.addEventListener('click', () => {
-                    // Se puede descomentar esto para añadir una animacion, pero esto no lo deja ajustar su tamaño en tiempo real.
-                    //const contenidoacordeon= button.nextElementSibling;
-                button.classList.toggle('boton__acordeon--activo');
-                    //if (button.classList.contains('boton__acordeon--activo')){
-                    //   contenidoacordeon.style.maxHeight = contenidoacordeon.scrollHeight + 'px';
-                    //} else{
-                    //    contenidoacordeon.style.maxHeight = 0;
-                    //}
-            });
-        });
-    </script>
 </body>
 </html>

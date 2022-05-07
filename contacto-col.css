@@ -30,38 +30,27 @@ h2{
     padding-bottom: 30px;
 }
 
-.boton__acordeon {
-    display: block;
-    width: 100%;
-    padding: 15px;
+
+.button_form {
+    display: inline-block;
+    background-color: #FFCA00;
     border: none;
-    outline: none;
-    cursor: pointer;
-    background: #FFCA00 ;
     color: #2a2f3d;
     text-align: center;
     font-size: 30px;
-    transition: .2s;  
+    padding: 30px;
+    cursor: pointer;
+    width: 100%;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
-.boton__acordeon::after{
-    content:'\25be';
-    float: right;
-    transform: scale(1.5);
-}
-.boton__acordeon--activo + .contenido__acordeon {display: block;}
-.boton__acordeon--activo{ background: #ffde5b}
-.boton__acordeon--activo::after{content: '\25b4'}
-   
-.contenido__acordeon{
-    padding: 0 15px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 35px;
-    /* align-items: baseline; */
-    background: #ffde5b;
-   
-    display: none;
-    text-align: center;
-    overflow: auto;
+
+  .button_form:hover {
+      background-color: #FF5733;
+      color: white;
 }
    
 form{
